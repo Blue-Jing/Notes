@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/DOM.css"/>
+    <script src="./js/index.js"></script>
+    <script src="./js/Form.js"></script>
+</head>
+<body>
+    <form id="test" action="Event.html" method="get">
+        <input name="but" type="submit" value="inout Submit">
+        <button  type="submit">but Submit</button>
+        <input class="img" type="image" src="./img/trophy.png"><br>
+        <textarea name="text001" id="" cols="60" rows="10" title="testText">请输入数字</textarea>
+        <input type="reset" value="重置">
+        <ul>
+            <li><input type="radio" name="color" value="1" title="radio1">1</li>
+            <li><input type="radio" name="color" value="2" title="radio2">2</li>
+            <li><input type="radio" name="color" value="3" title="radio3">3</li>
+        </ul>
+        <select name="select1" title="select" multiple>
+            <option value="s">s</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+        </select>
+        <select name="select2" title="select2" multiple>
+            <option value="s">s</option>
+        </select><br>
+    </form>
+    <!--富文本框-->
+    <iframe name="addText" src="./addText.html" style="height:100px;width:400px;border: 1px solid #666;"></iframe>
+    <div id="edi" style="height:100px;width:400px; border: 1px solid #08c;" contenteditable>
+        div富文本输入框
+    </div>
+    <div id="but" style="font-size: 12px;cursor: pointer;">粗体</div>
+</body>
+</html>

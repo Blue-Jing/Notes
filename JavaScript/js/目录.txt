@@ -1,0 +1,3 @@
+﻿
+compatible                              ---常见JS兼容问题(初级)
+Compatible_BOM                 ---判断浏览器、平台、环境版本号与类型

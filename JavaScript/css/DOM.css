@@ -1,0 +1,118 @@
+@import url('base.css');
+.t-box {
+    position: relative;
+    margin: 100px 0 0 100px;
+    /* 处理子元素margin-top参考容器不是当前容器的问题 */
+    padding-top: 1px;
+    /* border-top: 1px solid transparent; */
+    width: 800px;
+    height: 200px;
+    background: #4d4d4d;
+    overflow: auto;
+}
+.t-box .client {
+    margin: 100px 0 0 100px;
+    width: 800px;
+    height: 200px;
+    background: rgba(0,0,0,0.6);
+    border: 5px solid green;
+}
+.fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 138px;
+    height: 320px;
+    margin: -160px 0 0 -69px;
+    background: #333 url("http://img.hoop8.com/1607A/5aGZGy66.jpg") no-repeat;
+}
+.df {
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+.close {
+    top: 8px;
+    right: 22px;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: hidden;
+}
+.text {
+    top: 230px;
+    left: 18px;
+    width: 100px;
+    color: #333;
+    font-size: 12px;
+}
+.button {
+    box-sizing: border-box;
+    top: 277px;
+    left: 18px;
+    width: 99px;
+    height: 24px;
+    color: blue;
+    border:1px solid blue;
+    text-align:center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+}
+/* ---Event样式--- */
+.nav {
+    background: #3498DB;
+    color: #fff;
+}
+.nav .item {
+    display: table-cell;
+    width: 1%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.content {
+    position: relative;
+    height: 400px;
+    background: #2C3E50;
+}
+.content .loop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.content  span {
+    display: table-cell;
+    width: 24px;
+    height: 24px;
+    background: #F39C12;
+    color: #3498DB;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+.nes {
+    width: 70%;
+    height: 70%;
+    border: 1px dashed #fff;
+    overflow: hidden;
+}
+.loop > p {
+    box-sizing: border-box;
+    width: 40%;
+    height: 20%;
+    background: #3498DB;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 16px;
+    font: 13px/42px arial;
+    text-align: center;
+    cursor: pointer;
+}
