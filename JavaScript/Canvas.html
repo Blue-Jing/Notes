@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Canvas</title>
+    <style>
+        @import url("./css/base.css");
+        .canvas {
+            background: #2C3E50;
+            padding: 1px 0; /*解决子元素外边距影响父容器的问题*/
+            color: #f00;
+            text-align: center;
+        }
+        #canvas {
+            display: block;
+            margin: 48px auto;
+            width: 800px;
+            height: 500px;
+            border: 1px dashed #fff;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- canvas画布练习 start-->
+    <div class="canvas">
+        <canvas id="canvas">您的浏览器不支持Canvas</canvas>
+    </div>
+    <!-- canvas画布练习 end-->
+    <script src="./js/index.js"></script>
+    <script src="./js/Canvas.js"></script>
+</body>
+</html>
