@@ -197,20 +197,20 @@ var ctx = canvas.getContext('2d');
 
 ###### Canvas小知识
 * **变换时的注意事项**  
-> 1.图形变换的基点在 ``ctx`` 绘制对象的左上角  
-> 2.当使用了变换方法，将会影响之后绘制的图形 ( **变换会叠加** )  
-> 3.在变换前使用 ``ctx.save()`` ; 在变换后使用 ``ctx.restore()`` ( **防止变换叠加** )  
-> 4.制作动画时经常使用 ``ctx.clearRect(x,y, w,h)`` 清除画布  
+ > 1.图形变换的基点在 ``ctx`` 绘制对象的左上角  
+ > 2.当使用了变换方法，将会影响之后绘制的图形 ( **变换会叠加** )  
+ > 3.在变换前使用 ``ctx.save()`` ; 在变换后使用 ``ctx.restore()`` ( **防止变换叠加** )  
+ > 4.制作动画时经常使用 ``ctx.clearRect(x,y, w,h)`` 清除画布  
 * **三角函数**  
-> **弧度：** ``Math.PI/180``  
-> **震荡：** ``50 + 20*Math.sin(num++)``  
-> **旋转角度 θ：**  ``Math.atan(Δy/Δx)``  
-> **极坐标(圆)：**  ``x = rx + r * cos(θ); y = ry + r * sin(θ)`` ---旋转角度 ``(θ)``
+ > **弧度：** ``Math.PI/180``  
+ > **震荡：** ``50 + 20*Math.sin(num++)``  
+ > **旋转角度 θ：**  ``Math.atan(Δy/Δx)``  
+ > **极坐标(圆)：**  ``x = rx + r * cos(θ); y = ry + r * sin(θ)`` ---旋转角度 ``(θ)``
 ```
 x: rx + r * Math.cos(2*Math.PI * num)
 y: ry + r * Math.sin(2*Math.PI * num)
 ```  
-> **极坐标(球体)：**  ``x = r * sin(φ)sin(θ); y = rcos(φ); z = r * sin(φ)cos(θ)`` ---垂直轴夹角 ``(φ)`` ---平面中心旋转夹角 ``(θ)``
+> **极坐标(球体)：**  ``x = r * sin(φ)sin(θ); y = r * cos(φ); z = r * sin(φ)cos(θ)`` ---垂直轴夹角 ``(φ)`` ---平面中心旋转夹角 ``(θ)``
 ```
 x: r * Math.sin(Math.PI * num) * Math.sin(2*Math.PI * num)
 y: r * Math.cos(Math.PI * num)
