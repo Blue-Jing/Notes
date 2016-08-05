@@ -141,7 +141,7 @@ var ctx = canvas.getContext('2d');
 属性              | 描述
 :------           | :------:
 **font**          | 字体属性 ( ``'32px/64px Arial'`` )
-**textAlign**     | 对齐方式 ( ``start`` 顶对齐 \| ``end`` 底对齐 \| ``center``  居中 \| ``left`` 左对齐 \| ``right`` 右对齐 )
+**textAlign**     | 对齐方式 ( ``start`` 起始对齐 \| ``end`` 末尾对齐 \| ``center``  居中 \| ``left`` 左对齐 \| ``right`` 右对齐 )
 **textBaseline**  | 文本的基线 ( ``alphabetic`` 默认 \| ``top`` 顶端 \| ``bottom``  底端 \| ``middle`` 正中 \| ``hanging`` 数字顶端 \| ``ideographic`` 汉字底端 )  
 
 ![基线](../../illustration/gif/Canvas-textBaseline.gif)  
